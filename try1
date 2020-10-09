@@ -1,0 +1,9 @@
+fun main(args:(Array<String>)) {
+    var name:String="Vasilisa"
+    var name1:String="Roman"
+
+    var a: Int = 1
+    var b: Int = 2
+ println("Hello $name and $name1")
+    println("A+B = ${a+b}")
+}
