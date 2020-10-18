@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
     
-    val st: String = "hellow" //переменная st
+    val st: String = "hello" //переменная st
     
     val size = st.length //расчитаем символы в строке
     
