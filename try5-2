@@ -1,0 +1,12 @@
+fun main(args: Array<String>) { // NPE Null and Safety
+
+    val st: String? //переменная st, ? и ! нужны, если допускаем что может быть null
+    st = getSt()
+    val size = st!!.length
+    println(size)
+
+}
+fun getSt(): String? {
+    return null
+
+}
