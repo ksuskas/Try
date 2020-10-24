@@ -1,0 +1,12 @@
+class Person (var firstname: String, var lastname: String, var age: Int)
+
+fun main(args: Array<String>) {
+
+    val person = Person("Vasilisa", "Zinova", 18)
+
+    println(person.firstname)
+    println(person.lastname)
+    println(person.age)
+
+
+}
