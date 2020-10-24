@@ -1,6 +1,6 @@
-class Person (var firstname: String, var lastname: String, var age: Int)
+class Person (var firstname: String, var lastname: String, var age: Int)// Класс,задающий человека по имени, фамилии и возрасту
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>) { 
 
     val person = Person("Vasilisa", "Zinova", 18)
 
