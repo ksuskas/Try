@@ -1,6 +1,21 @@
 class Person (var firstname: String, var lastname: String, var age: Int)// Класс,задающий человека по имени, фамилии и возрасту
 
-fun main(args: Array<String>) { 
+
+class Car(private var weight: Double, private var size: Int) { //Класс, определяющий машину, далее - грузовик или нет, работа с геттерами и сеттерами
+
+    var Gruzovik: Boolean = false
+        get() {
+            return weight > size
+        }
+        set(value) {
+            if (value) {
+                println("Yeees")
+            }
+            field = value
+        }
+}
+
+fun main(args: Array<String>) {
 
     val person = Person("Vasilisa", "Zinova", 18)
 
@@ -9,4 +24,8 @@ fun main(args: Array<String>) {
     println(person.age)
 
 
-}
+    var car = Car(9.2, 10)
+    
+    println(car.Gruzovik) // True or false - грузовик или нет
+
+    car.Gruzovik = true
