@@ -1,0 +1,61 @@
+package animals
+
+fun superMethod1 () {
+    println("Что-то умное")
+}
+
+fun superMethod2 () {
+    println("Что-то очень умное")
+}
+
+
+package animals.cats // путь, указывает где можно найти данный класс
+
+class CatA {
+    fun a1() {
+        println("CatA.a1")
+
+    }
+
+    fun a2() {
+        println("CatA.a2")
+    }
+}
+
+package animals.cats
+
+class CatB {
+
+    fun b1() {
+        CatA().a1() //импорт не нужен в данном случае
+    }
+}
+
+package animals.dogs
+
+class DogA {
+    fun a1() {
+        println("DogA.a1")
+
+    }
+
+    fun a2() {
+        println("DogA.a2")
+    }
+}
+
+
+
+
+import animals.cats.CatA // путь импорта, чтобы использовать CatA
+import animals.* //* вызывает ВСЕ методы из animals, это оч круто
+
+fun main(args: Array<String>) {
+
+    val catA = CatA()
+    catA.a1()
+
+    superMethod1()
+    superMethod2()
+
+}
