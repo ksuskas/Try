@@ -1,0 +1,13 @@
+fun main(args: Array<String>) {
+
+    println(Colors.red) // напечатает как просто red
+    var massage: Colors = Colors.white
+    var massage2: String = Colors.black.name //вернет как строку
+
+    println(massage)
+
+    println(Colors.red.colorHex) // код цвета
+    println(Colors.red.opacity) // прозрачность
+
+    Colors.red.some() // вызывает метод, но лучше в энамах не писать логики, не касающейся самих энамов
+}
