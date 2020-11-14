@@ -1,0 +1,32 @@
+import Colors.*
+
+fun main(args: Array<String>){
+
+    var color: Colors = Colors.black
+    var res = when (color){
+        black -> "черныйчерный как утро когда я иду на работу"
+        red -> "красный"
+        green -> "зеленый"
+        white-> "белый"
+
+        else -> ""
+    }
+
+    var N=2
+    var result = when(N) { // задаем переменную результат, которая равна условию если..иначе..
+        1 -> "One"
+        2 -> "Two"
+        3 -> "Three"
+        4 -> "Four"
+        5 -> "Five"
+        6 -> "Six"
+        else -> "None"
+
+    }
+
+    println(result)
+    println(res)
+
+
+
+}
