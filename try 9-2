@@ -1,0 +1,27 @@
+import Colors.*
+
+fun main(args: Array<String>){
+
+    fun getFavoriteColor (color: Colors) = when(color){
+        black,white -> "черно-белый"
+        red,green -> "красно-зеленый"
+
+        else -> "Без цвета"
+    }
+    println(getFavoriteColor(green)) //прямо тут задаем функцию и ее значение (значение цвета)
+
+    when (setOf(black,white)) { //setOf - набор символов
+        setOf(green,red) -> println("красно-зеленый")
+        setOf(black,white) -> println("бело-черный")
+
+    }
+
+    var a = 2
+    var b = 4
+
+    when { // без if! удобно
+        (a > b) -> println("$a >$b")
+        (a < b) -> println("$a < $b")
+        (a==b) -> println("$a = $b")
+    }
+}
