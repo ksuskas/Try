@@ -1,0 +1,10 @@
+package `interface`
+
+interface MyInt { // интерфейсы - шаблоны, хранят свойства, в них делают арх-ру для классов, к-ые его реализуют
+    
+    fun f1()
+
+    fun f2() {
+        println("default")
+    }
+}
