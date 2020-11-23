@@ -1,0 +1,8 @@
+import `interface`.A
+import `interface`.MyInt
+
+fun main(args: Array<String>) {
+    var v1: MyInt = A() // в переменную MyInt можем присвоить разные реализации, разные классы (А,В,С и тд)
+
+    v1.f1()
+}
